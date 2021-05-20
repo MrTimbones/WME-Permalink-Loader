@@ -1,17 +1,9 @@
 /**
   Allows external webpages to load permalinks directly into an existing instance of WME, without reloading it.
 
-  For use with WME Permalink Loader userscript: https://greasyfork.org/en/scripts/426525-wme-permalink-loader
+  For use with this userscript: https://greasyfork.org/en/scripts/426525-wme-permalink-loader
 
-  Instructions for use:
-  
-  A: add the following to each of your <a> tags: onclick="return loadPermalink(this)"
-  
-     for other kinds of element, you can replace 'this' with the permalink string directly
-     
-  B: or, add the following code at the top of document to upgrade all the permalinks:
-  
-     <body onload="upgradePermalinks()">
+  See https://github.com/MrTimbones/WME-Permalink-Loader for instructions for how to install
 **/
 
 var PLL = {
