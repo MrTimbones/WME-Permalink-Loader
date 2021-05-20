@@ -1,4 +1,4 @@
-# WME-Permalink-Loader
+# WME Permalink Loader
 Allows external webpages to load permalinks directly into an existing instance of Waze Map Editor, without reloading it.
 
 ## How it works
