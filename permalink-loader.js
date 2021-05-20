@@ -1,10 +1,10 @@
 /**
-  Allows external webpages to load permalinks directly into an existing instance of WME, without reloading it.
-
-  For use with this userscript: https://greasyfork.org/en/scripts/426525-wme-permalink-loader
-
-  See https://github.com/MrTimbones/WME-Permalink-Loader for instructions for how to install
-**/
+ * Allows external webpages to load permalinks directly into an existing instance of WME, without reloading it.
+ *
+ * For use with this userscript: https://greasyfork.org/en/scripts/426525-wme-permalink-loader
+ *
+ * See https://github.com/MrTimbones/WME-Permalink-Loader for instructions for how to install
+ **/
 
 var PLL = {
   version : 0.9,
@@ -31,8 +31,8 @@ function loadPermalink(permalink) {
   if (!permalink.match(/waze\.com.*\/editor/)) {
     return true;
   }
-  var url = new URL(permalink);
   
+  var url = new URL(permalink);
   var tabname = url.hostname;
   var destination = url.origin + url.pathname;
 
@@ -72,7 +72,7 @@ function loadPermalink(permalink) {
   return false;
 }
 
-// list for acknowledgements from WME, so we know it's alive
+// listen for acknowledgements from WME, so we know it's alive
 window.addEventListener("message", function(event) {
   if (event.data.pong) {
     PLL.active = event.data.pong;
