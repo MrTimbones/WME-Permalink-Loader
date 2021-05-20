@@ -14,7 +14,7 @@ This works by having two parts:
 
 ## Instructions for use
 
-   Load 'permalink-loader.js' into the `<head>` of the HTML document, and then do *either* **A** or **B** below:
+   Load '[permalink-loader.js](https://github.com/MrTimbones/WME-Permalink-Loader/blob/main/permalink-loader.js)' into the `<head>` of the HTML document, and then do *either* **A** or **B** below:
 
 **A**: add the following onclick attribute to each of your <a> tags:
 ```javascript
